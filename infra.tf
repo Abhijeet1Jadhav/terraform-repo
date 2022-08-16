@@ -8,5 +8,5 @@ resource "aws_instance" "set1" {
   Name = "Test1"
   owner = "Abhijeet"
 	}
- security_groups = "sg-0be2426bd6b3f0ee0"
+ security_groups = "launch-wizard-1"
 }
