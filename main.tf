@@ -11,8 +11,8 @@ terraform {
 #terraform { cloud { organization = "jadhavabhijeet640" workspaces { name = "demo-workspace" } } }
 
 provider "aws" {
-  access_key = "AKIAVYQ4LEAU7OE2AXDV"
-  secret_key = "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"
+  #access_key = "AKIAVYQ4LEAU7OE2AXDV"
+  #secret_key = "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"
   region     = "us-east-2"
 }
 
