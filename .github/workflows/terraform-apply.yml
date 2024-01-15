@@ -23,7 +23,9 @@ jobs:
         aws-region: us-east-2  # Replace with your desired AWS region
 
     - name: Terraform Init
-      run: terraform workspace select dev || terraform workspace new dev
+      run: |
+        terraform init
+        terraform workspace select dev || terraform workspace new dev
       
     - name: Terraform Apply
       run: terraform apply -auto-approve
