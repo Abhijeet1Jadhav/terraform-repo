@@ -5,7 +5,7 @@ terraform {
       version = ">= 4.16, < 5.0"
     }
   }
-  required_version = ">= 1.2.0"
+  required_version = "~> 2.13.0"
 }   
 
 #terraform { cloud { organization = "jadhavabhijeet640" workspaces { name = "demo-workspace" } } }
