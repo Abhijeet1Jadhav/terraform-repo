@@ -28,4 +28,4 @@ jobs:
         terraform workspace select dev || terraform workspace new dev
       
     - name: Terraform Apply
-      run: terraform apply -auto-approve
+      run: terraform destroy -auto-approve
