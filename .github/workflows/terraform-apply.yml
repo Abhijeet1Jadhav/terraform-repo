@@ -23,9 +23,7 @@ jobs:
         aws-region: us-east-2  # Replace with your desired AWS region
 
     - name: Terraform Init
-      run: |
-        terraform init
-        terraform workspace select dev || terraform workspace new dev
+      run: terraform init
       
     - name: Terraform Apply
       run: terraform destroy -auto-approve
