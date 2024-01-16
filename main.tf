@@ -45,7 +45,7 @@ resource "aws_security_group" "example" {
 resource "aws_instance" "demo" {
   ami = var.ami_id
   instance_type = var.instance_type
-  vpc_security_group_ids = [aws_security_group.example.example-security-group]
+  vpc_security_group_ids = [aws_security_group.example.id]
 }
 variable "instance_type" {}
 variable "ami_id" {}
